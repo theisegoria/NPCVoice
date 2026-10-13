@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "facts.json in a .npcproj folder",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "facts": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/fact"
+      }
+    }
+  }
+}

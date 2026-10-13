@@ -1,0 +1,6 @@
+# NPCVoice model assets: name file bytes sha256 (written by tools/package_models.sh)
+release v0.1.0
+kokoro-82m-coreml kokoro-82m-coreml.tar 329996288 5da372d6b7f8190940541778981410e25a166d283bbaf3b68555c7f048df1068
+misaki-en misaki-en.tar 6103040 1520ae97fe5fa044384ca5bf574d85ff90073e715128e90ec40d7747d4f31886
+misaki-ja misaki-ja.tar 1927168 a40cfedb67db572608b11e14e962c97caab0e680aacb17294f37349c23e6c927
+qwen3.5-2b-4bit qwen3.5-2b-4bit.tar 1749088256 aa1599eedd28102146d659e6b349f94940e24d7a266acad736662cc37135ea9c

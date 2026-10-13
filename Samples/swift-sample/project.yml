@@ -1,0 +1,18 @@
+# A consumer project that links only the shipped binary (dist/NPCVoiceKit.xcframework).
+name: SwiftSample
+options:
+  deploymentTarget:
+    macOS: "27.0"
+targets:
+  swift-sample:
+    type: tool
+    platform: macOS
+    sources: [Sources]
+    dependencies:
+      - framework: ../../dist/NPCVoiceKit.xcframework
+        embed: false
+    settings:
+      base:
+        SWIFT_VERSION: "6.0"
+        CODE_SIGN_IDENTITY: "-"
+        LD_RUNPATH_SEARCH_PATHS: ["$(SRCROOT)/../../dist/NPCVoiceKit.xcframework/macos-arm64"]

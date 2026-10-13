@@ -1,0 +1,18 @@
+.build/
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+.swiftpm/
+.DS_Store
+third_party/kokoro/.venv/
+dist/
+Integrations/Unreal/NPCVoice/Source/ThirdParty/
+Integrations/Godot/godot-cpp/
+Integrations/Godot/addons/npcvoice/bin/
+Integrations/Godot/.sconsign.dblite
+Integrations/Unity/com.npcvoice.runtime/Plugins/macOS/NPCVoiceKit.bundle/
+
+# Model weights (tools/fetch_models.sh)
+third_party/models/*
+!third_party/models/README.md

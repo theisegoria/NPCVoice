@@ -1,0 +1,432 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shared definitions",
+  "$defs": {
+    "language": {
+      "enum": [
+        "en",
+        "ja"
+      ],
+      "description": "BCP 47 tag of the line's language."
+    },
+    "voice": {
+      "type": "string",
+      "description": "af_heart, af_bella, am_michael, am_fenrir (English); jf_alpha, jf_tebukuro, jm_kumo (Japanese)."
+    },
+    "emotion": {
+      "enum": [
+        "neutral",
+        "happy",
+        "sad",
+        "angry",
+        "fear",
+        "surprise",
+        "disgust",
+        "contempt",
+        "pain",
+        "exertion",
+        "concentration",
+        "fatigue"
+      ]
+    },
+    "intent": {
+      "enum": [
+        "inform",
+        "warn",
+        "request",
+        "refuse",
+        "greet",
+        "farewell",
+        "deflect",
+        "plead",
+        "threaten"
+      ]
+    },
+    "fallbackReason": {
+      "enum": [
+        "none",
+        "backend_unavailable",
+        "unsupported_language",
+        "timeout",
+        "queue_full",
+        "invalid_request",
+        "schema_invalid",
+        "guardrail_rejected",
+        "refusal",
+        "model_guardrail",
+        "context_exceeded",
+        "rate_limited",
+        "backend_error"
+      ]
+    },
+    "strings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "u32": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Per-request limits. Omitted fields keep their defaults.",
+      "properties": {
+        "deadlineMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 2500,
+          "description": "Submit to result, queueing included. Late lines fall back."
+        },
+        "maxOutputTokens": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 160
+        },
+        "maxPromptTokens": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 3000,
+          "description": "Estimated; lower-salience facts are dropped to fit."
+        },
+        "maxFacts": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 12
+        },
+        "maxPerception": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 6
+        },
+        "maxExchanges": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 6
+        },
+        "maxMemories": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 6
+        }
+      }
+    },
+    "sampling": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "greedy": {
+          "type": "boolean",
+          "default": true,
+          "description": "Greedy lines are reproducible and cacheable."
+        },
+        "temperature": {
+          "type": "number",
+          "default": 0.7
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        }
+      }
+    },
+    "world": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "setting": {
+          "type": "string"
+        },
+        "tone": {
+          "type": "string"
+        },
+        "contentRating": {
+          "type": "string"
+        },
+        "rules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Added to every character's instructions."
+        }
+      }
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "knownBy": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Character ids; empty means everyone."
+        },
+        "requiredFlags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Progress flags that must all be set before the fact is used (secrets)."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "leakKeywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "A line containing one of these while the fact is withheld is rejected."
+        },
+        "salience": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.5
+        }
+      }
+    },
+    "command": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Allowed targets; empty means the command takes none."
+        }
+      }
+    },
+    "fallbackLine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "intent": {
+          "$ref": "#/$defs/intent"
+        },
+        "emotion": {
+          "$ref": "#/$defs/emotion"
+        }
+      }
+    },
+    "line": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "emotion",
+        "intent",
+        "commands",
+        "language",
+        "voice",
+        "character"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "emotion": {
+          "$ref": "#/$defs/emotion"
+        },
+        "intent": {
+          "$ref": "#/$defs/intent"
+        },
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "target"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string"
+              },
+              "target": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "language": {
+          "$ref": "#/$defs/language"
+        },
+        "voice": {
+          "type": "string"
+        },
+        "character": {
+          "type": "string"
+        }
+      }
+    },
+    "visemeSegment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "viseme",
+        "start",
+        "end",
+        "weight"
+      ],
+      "properties": {
+        "viseme": {
+          "enum": [
+            "sil",
+            "PP",
+            "FF",
+            "TH",
+            "DD",
+            "kk",
+            "CH",
+            "SS",
+            "RR",
+            "aa",
+            "E",
+            "ih",
+            "oh",
+            "ou",
+            "Y"
+          ]
+        },
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "phonemeSegment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "phoneme",
+        "start",
+        "end",
+        "stress",
+        "source"
+      ],
+      "properties": {
+        "phoneme": {
+          "enum": [
+            "AA",
+            "AE",
+            "AH",
+            "AO",
+            "AW",
+            "AY",
+            "B",
+            "CH",
+            "D",
+            "DH",
+            "EH",
+            "ER",
+            "EY",
+            "F",
+            "G",
+            "HH",
+            "IH",
+            "IY",
+            "JH",
+            "K",
+            "L",
+            "M",
+            "N",
+            "NG",
+            "OW",
+            "OY",
+            "P",
+            "R",
+            "S",
+            "SH",
+            "T",
+            "TH",
+            "UH",
+            "UW",
+            "V",
+            "W",
+            "Y",
+            "Z",
+            "ZH",
+            "sil",
+            "sp"
+          ]
+        },
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        },
+        "stress": {
+          "enum": [
+            "unspecified",
+            "unstressed",
+            "primary",
+            "secondary"
+          ]
+        },
+        "source": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

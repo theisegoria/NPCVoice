@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "npc_audio.info_json (npc_speech_speak)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "phonemes",
+    "duration",
+    "sourceLUFS",
+    "gainDB",
+    "unknownWords",
+    "visemes",
+    "phonemeTrack"
+  ],
+  "properties": {
+    "phonemes": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "number",
+      "minimum": 0
+    },
+    "sourceLUFS": {
+      "type": "number"
+    },
+    "gainDB": {
+      "type": "number"
+    },
+    "unknownWords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visemes": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/visemeSegment"
+      }
+    },
+    "phonemeTrack": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/phonemeSegment"
+      }
+    }
+  }
+}

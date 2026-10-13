@@ -1,0 +1,13 @@
+{
+  "name": "com.npcvoice.runtime",
+  "version": "0.1.0",
+  "displayName": "NPCVoice",
+  "description": "Local AI dialogue and speech for characters on Apple-silicon Macs: personas and constraints, validated lines with hand-written fallbacks, streamed voices with lip-sync visemes.",
+  "unity": "2022.3",
+  "license": "Apache-2.0",
+  "keywords": ["dialogue", "npc", "ai", "llm", "tts", "lip-sync"],
+  "author": { "name": "NPCVoice" },
+  "samples": [
+    { "displayName": "Talk", "description": "Ask a character a question and hear the answer.", "path": "Samples~/Talk" }
+  ]
+}

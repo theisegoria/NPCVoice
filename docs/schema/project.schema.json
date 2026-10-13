@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "project.json in a .npcproj folder",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "version"
+  ],
+  "properties": {
+    "format": {
+      "const": "npcvoice-project"
+    },
+    "version": {
+      "const": 1
+    },
+    "name": {
+      "type": "string"
+    },
+    "world": {
+      "$ref": "common.schema.json#/$defs/world"
+    },
+    "defaults": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "budget": {
+          "$ref": "common.schema.json#/$defs/budget"
+        },
+        "sampling": {
+          "$ref": "common.schema.json#/$defs/sampling"
+        },
+        "maxCommands": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295,
+          "default": 2
+        }
+      }
+    },
+    "pronunciations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "word",
+          "phonemes"
+        ],
+        "properties": {
+          "word": {
+            "type": "string",
+            "minLength": 1
+          },
+          "phonemes": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Kokoro/misaki phonemes, e.g. Okˈɑfɔɹ."
+          },
+          "language": {
+            "$ref": "common.schema.json#/$defs/language",
+            "default": "en"
+          }
+        }
+      }
+    }
+  }
+}

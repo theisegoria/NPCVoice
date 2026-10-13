@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Custom backend request (npc_backend_callbacks.generate)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "instructions",
+    "prompt",
+    "schema",
+    "language",
+    "maxOutputTokens",
+    "sampling"
+  ],
+  "properties": {
+    "instructions": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "schema": {
+      "type": "object",
+      "description": "JSON Schema the backend's output must satisfy."
+    },
+    "language": {
+      "$ref": "common.schema.json#/$defs/language"
+    },
+    "maxOutputTokens": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sampling": {
+      "$ref": "common.schema.json#/$defs/sampling"
+    }
+  }
+}

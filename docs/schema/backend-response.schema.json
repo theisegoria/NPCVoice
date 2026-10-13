@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Custom backend response (npc_backend_done_fn)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "ok",
+        "cancelled",
+        "unavailable",
+        "refusal",
+        "guardrail",
+        "context_exceeded",
+        "unsupported_language",
+        "rate_limited",
+        "decoding_failure",
+        "error"
+      ]
+    },
+    "json": {
+      "type": "string",
+      "description": "The model's output: a JSON line matching the request schema."
+    },
+    "promptTokens": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "outputTokens": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "diagnostic": {
+      "type": "string"
+    }
+  }
+}

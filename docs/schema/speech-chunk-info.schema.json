@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "npc_speech_chunk.info_json (npc_speech_submit)",
+  "description": "Times are seconds from the start of the line.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "phonemes",
+    "gainDB",
+    "visemes",
+    "phonemeTrack"
+  ],
+  "properties": {
+    "phonemes": {
+      "type": "string"
+    },
+    "gainDB": {
+      "type": "number"
+    },
+    "visemes": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/visemeSegment"
+      }
+    },
+    "phonemeTrack": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/phonemeSegment"
+      }
+    }
+  }
+}

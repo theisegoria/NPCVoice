@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dialogue result (npc_service_wait, npc_service_drain)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ticket",
+    "status",
+    "source",
+    "fallbackReason",
+    "line",
+    "diagnostic",
+    "promptTokens",
+    "outputTokens",
+    "latencyMs",
+    "usedFactIds"
+  ],
+  "properties": {
+    "ticket": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "line",
+        "cancelled"
+      ]
+    },
+    "source": {
+      "enum": [
+        "model",
+        "cache",
+        "fallback"
+      ]
+    },
+    "fallbackReason": {
+      "$ref": "common.schema.json#/$defs/fallbackReason"
+    },
+    "line": {
+      "$ref": "common.schema.json#/$defs/line"
+    },
+    "diagnostic": {
+      "type": "string"
+    },
+    "promptTokens": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "outputTokens": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "latencyMs": {
+      "type": "number",
+      "minimum": 0
+    },
+    "usedFactIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "characters/<id>.json in a .npcproj folder",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "persona": {
+      "type": "string"
+    },
+    "traits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mood": {
+      "type": "string"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "target"
+        ],
+        "properties": {
+          "target": {
+            "type": "string",
+            "minLength": 1,
+            "description": "\"player\" or another character's id."
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "speechStyle": {
+      "type": "string"
+    },
+    "voice": {
+      "$ref": "common.schema.json#/$defs/voice"
+    },
+    "language": {
+      "$ref": "common.schema.json#/$defs/language"
+    },
+    "allowedEmotions": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/emotion"
+      },
+      "description": "Empty means all."
+    },
+    "allowedIntents": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/intent"
+      },
+      "description": "Empty means all."
+    },
+    "maxLineCharacters": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295,
+      "description": "0 means the language default (220 English, 90 Japanese)."
+    },
+    "forbiddenTopics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The model is told to deflect these."
+    },
+    "forbiddenTerms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Lines containing these are rejected."
+    },
+    "fallbacks": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/fallbackLine"
+      }
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Kinds from commands.json this character may propose."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1.0",
+	"FriendlyName": "NPCVoice",
+	"Description": "Local AI dialogue and speech for characters: personas, constraints, fallbacks, streamed voice with lip-sync visemes.",
+	"Category": "AI",
+	"CreatedBy": "NPCVoice",
+	"DocsURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Modules": [
+		{
+			"Name": "NPCVoice",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Mac" ]
+		}
+	]
+}

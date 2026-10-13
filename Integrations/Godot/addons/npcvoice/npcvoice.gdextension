@@ -1,0 +1,15 @@
+[configuration]
+
+entry_symbol = "npcvoice_library_init"
+compatibility_minimum = "4.3"
+reloadable = false
+
+[libraries]
+
+macos.debug = "res://addons/npcvoice/bin/libnpcvoice.macos.template_debug.arm64.dylib"
+macos.release = "res://addons/npcvoice/bin/libnpcvoice.macos.template_release.arm64.dylib"
+
+[dependencies]
+
+macos.debug = { "res://addons/npcvoice/bin/NPCVoiceKit.framework" : "Contents/Frameworks" }
+macos.release = { "res://addons/npcvoice/bin/NPCVoiceKit.framework" : "Contents/Frameworks" }

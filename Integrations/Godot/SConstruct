@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+# Builds the NPCVoice GDExtension for macOS on Apple silicon. Needs:
+#   - godot-cpp for your Godot version at ./godot-cpp (git clone -b 4.4 https://github.com/godotengine/godot-cpp)
+#   - NPCVoiceKit.xcframework (tools/build_xcframework.sh, or the release's SDK zip)
+# scons platform=macos arch=arm64 target=template_debug   (and target=template_release)
+#   npcvoicekit=<path to NPCVoiceKit.xcframework>   default ../../dist/NPCVoiceKit.xcframework
+import os
+
+env = SConscript("godot-cpp/SConstruct")
+xcf = ARGUMENTS.get("npcvoicekit", "../../dist/NPCVoiceKit.xcframework")
+slice_dir = os.path.join(xcf, "macos-arm64")
+
+env.Append(CPPPATH=["src/", "../cpp/include"])
+env.Append(CCFLAGS=["-F" + slice_dir])
+# The framework sits next to the library (addons/npcvoice/bin in the editor, Contents/Frameworks
+# in an exported app), so @loader_path finds it in both.
+env.Append(LINKFLAGS=["-F" + slice_dir, "-framework", "NPCVoiceKit", "-Wl,-rpath,@loader_path"])
+
+library = env.SharedLibrary(
+    "addons/npcvoice/bin/libnpcvoice{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+    source=Glob("src/*.cpp"),
+)
+Default(library)

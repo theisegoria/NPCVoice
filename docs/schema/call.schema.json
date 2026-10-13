@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game call (npc_project_request)",
+  "description": "What the game sends for one line. The project supplies the persona, facts, commands and fallbacks.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "character"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "playerUtterance"
+      ],
+      "properties": {
+        "playerUtterance": {
+          "minLength": 1
+        }
+      }
+    },
+    {
+      "required": [
+        "trigger"
+      ],
+      "properties": {
+        "trigger": {
+          "minLength": 1
+        }
+      }
+    }
+  ],
+  "properties": {
+    "character": {
+      "type": "string",
+      "minLength": 1
+    },
+    "playerUtterance": {
+      "type": "string"
+    },
+    "trigger": {
+      "type": "string",
+      "description": "An event instead of speech, e.g. \"The player draws a knife.\""
+    },
+    "mood": {
+      "type": "string",
+      "description": "Overrides the character's mood for this line."
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Progress flags currently set (unlock secret facts)."
+    },
+    "location": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "perception": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "text"
+            ],
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "salience": {
+                "type": "number",
+                "default": 0.5
+              }
+            }
+          }
+        ]
+      }
+    },
+    "exchanges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "speaker": {
+            "enum": [
+              "player",
+              "character",
+              "other"
+            ],
+            "default": "player"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "memories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "maxCommands": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "budget": {
+      "$ref": "common.schema.json#/$defs/budget"
+    },
+    "sampling": {
+      "$ref": "common.schema.json#/$defs/sampling"
+    },
+    "allowCache": {
+      "type": "boolean",
+      "default": true
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295,
+      "default": 0
+    }
+  }
+}

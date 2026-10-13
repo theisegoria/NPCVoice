@@ -1,0 +1,5 @@
+mlx-swift 19601207e9a0de51e03ee6ec0c3c5f3784275075 0.32.3
+mlx-swift-lm 3b339ad6e3b3f44c8121ecff5131c7fd55e075e6 3.32.3
+swift-numerics 0c0290ff6b24942dadb83a929ffaaa1481df04a2 1.1.1
+  submodule submodules/mlx 1f8e74e3f12f31365464a6867c6579f0e9b29d85
+  submodule submodules/mlx-c ebc88f10caa1b625e6b581437a8dea6df8a70085

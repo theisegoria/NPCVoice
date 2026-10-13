@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "commands.json in a .npcproj folder",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "commands": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/command"
+      }
+    }
+  }
+}

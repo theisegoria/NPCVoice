@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "npc_backend_create_mlx config",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "modelDir": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Folder holding the Qwen weights; null or absent uses the bundled copy."
+    },
+    "cacheMB": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 256,
+      "description": "MLX buffer cache bound (process-wide)."
+    },
+    "warmUp": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

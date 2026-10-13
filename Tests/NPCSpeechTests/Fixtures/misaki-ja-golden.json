@@ -1,0 +1,605 @@
+{
+ "source": "misaki 0.9.4 ja.JAG2P(cutlet) + fugashi + unidic-lite 1.0.8",
+ "lines": [
+  {
+   "text": "こんにちは、東京へようこそ。",
+   "phonemes": "koɲɲiʨiβa, toːkʲoː ejoː koso."
+  },
+  {
+   "text": "海辺の祠の鈴は、嵐の前の晩にひとりでに鳴る。",
+   "phonemes": "ɯmʲibe no hokoɾa no sɨzɨ βa, aɾaɕi no mae no baɴ ɲi çitoɾʲideɲi naɾɯ."
+  },
+  {
+   "text": "私は海辺の祠の守り人、アイコです。",
+   "phonemes": "βatakɯɕi βa ɯmʲibe no hokoɾa no mamoɾʲi ɲiɴ, aiko desɨ."
+  },
+  {
+   "text": "ちょっと待って！学校に行きました。",
+   "phonemes": "ʨoʔto maʔte! ɡaʔkoː ɲi ikʲi maɕita."
+  },
+  {
+   "text": "コーヒーを一杯ください。",
+   "phonemes": "koːçiː o iʔpai kɯdasai."
+  },
+  {
+   "text": "原子炉の扉は封鎖されている。",
+   "phonemes": "ɡeɴɕiɾo no tobʲiɾa βa ɸɯːsa saɾete iɾɯ."
+  },
+  {
+   "text": "ようこそ、旅の方。",
+   "phonemes": "joːkoso, tabʲi no hoː."
+  },
+  {
+   "text": "……今は、お答えできません。",
+   "phonemes": "...... ima βa, o kotae dekʲi maseɴ."
+  },
+  {
+   "text": "嵐が来ますか？",
+   "phonemes": "aɾaɕi ɡa kʲimasɨ ka?"
+  },
+  {
+   "text": "港は静かです。",
+   "phonemes": "mʲinato βa ɕizɨka desɨ."
+  },
+  {
+   "text": "先生、ありがとうございます。",
+   "phonemes": "seɴseː, aɾʲiɡatoː ɡoʣaimasɨ."
+  },
+  {
+   "text": "この道をまっすぐ行ってください。",
+   "phonemes": "kono mʲiʨi o maʔsɨɡɯ iʔte kɯdasai."
+  },
+  {
+   "text": "彼は三日前に出発しました。",
+   "phonemes": "kaɾe βa mʲiʔka mae ɲi ɕɨʔpaʦɨ ɕi maɕita."
+  },
+  {
+   "text": "部屋は一泊三千円です。",
+   "phonemes": "heja βa iʨi hakɯ saɴʣeɴ eɴ desɨ."
+  },
+  {
+   "text": "雨の夜、祠の灯りが少し揺れる。",
+   "phonemes": "ame no joɾɯ, hokoɾa no akaɾʲi ɡa sɨkoɕi jɯɾeɾɯ."
+  },
+  {
+   "text": "誰にも言わないでください。",
+   "phonemes": "daɾe ɲi mo iβanai de kɯdasai."
+  },
+  {
+   "text": "あの船はもう戻らないでしょう。",
+   "phonemes": "ano ɸɯne βamoː modoɾanai deɕoː."
+  },
+  {
+   "text": "鐘が八回鳴ったら、門は閉まります。",
+   "phonemes": "kane ɡa haʨi kai naʔtaɾa, moɴ βa ɕimaɾʲimasɨ."
+  },
+  {
+   "text": "気をつけて、夜の海は危ないですよ。",
+   "phonemes": "kʲi o ʦɨkete, joɾɯ no ɯmʲi βa abɯnai desɨ jo."
+  },
+  {
+   "text": "お茶でもいかがですか？",
+   "phonemes": "oʨa de mo ikaɡa desɨ ka?"
+  },
+  {
+   "text": "すみません、よく分かりません。",
+   "phonemes": "sɨmʲimaseɴ, jokɯ βakaɾʲimaseɴ."
+  },
+  {
+   "text": "明日の朝、また来てください。",
+   "phonemes": "asɨ no asa, mata kʲite kɯdasai."
+  },
+  {
+   "text": "本当に、それでいいのですか？",
+   "phonemes": "hontoː ɲi, soɾe de iː no desɨ ka?"
+  },
+  {
+   "text": "昔々、この村に大きな龍が住んでいました。",
+   "phonemes": "mɯkaɕimɯkaɕi, kono mɯɾa ɲi oːkʲina ɾʲɨː ɡa sɨnde i maɕita."
+  },
+  {
+   "text": "やめろ！",
+   "phonemes": "jameɾo!"
+  },
+  {
+   "text": "一泊いくらですか？",
+   "phonemes": "iʨi hakɯ ikɯɾa desɨ ka?"
+  },
+  {
+   "text": "二泊三日の旅です。",
+   "phonemes": "ɲi hakɯ mʲiʔka no tabʲi desɨ."
+  },
+  {
+   "text": "鉛筆を三本ください。",
+   "phonemes": "empʲiʦɨ o saɴ poɴ kɯdasai."
+  },
+  {
+   "text": "六本の矢が刺さっている。",
+   "phonemes": "ɾokɯ poɴ no ja ɡa sasaʔte iɾɯ."
+  },
+  {
+   "text": "八本の柱がある。",
+   "phonemes": "haʨi poɴ no haɕiɾa ɡa aɾɯ."
+  },
+  {
+   "text": "十本の剣を集めた。",
+   "phonemes": "ʥɨː poɴ no keɴ o aʦɨmeta."
+  },
+  {
+   "text": "猫が一匹、犬が三匹います。",
+   "phonemes": "neko ɡa iʨi çikʲi, inɯ ɡa saɴ çikʲi imasɨ."
+  },
+  {
+   "text": "魚を六匹釣った。",
+   "phonemes": "sakana o ɾokɯ çikʲi ʦɨʔta."
+  },
+  {
+   "text": "一回だけ試してみよう。",
+   "phonemes": "iʨikai dake tameɕite mʲijoː."
+  },
+  {
+   "text": "三回目の挑戦だ。",
+   "phonemes": "saɴ kai me no ʨoːseɴ da."
+  },
+  {
+   "text": "一杯の水をください。",
+   "phonemes": "iʨibai no mʲizɨ o kɯdasai."
+  },
+  {
+   "text": "二杯目はいらない。",
+   "phonemes": "ɲi bai me βaiɾanai."
+  },
+  {
+   "text": "三杯飲んだ。",
+   "phonemes": "saɴ bai noɴ da."
+  },
+  {
+   "text": "一階の部屋です。",
+   "phonemes": "iʨikai no heja desɨ."
+  },
+  {
+   "text": "三階に上がってください。",
+   "phonemes": "saɴ kai ɲi aɡaʔte kɯdasai."
+  },
+  {
+   "text": "一人で来たのか？",
+   "phonemes": "çitoɾʲi de kʲita noka?"
+  },
+  {
+   "text": "二人とも無事だ。",
+   "phonemes": "ɸɯtaɾʲi tomo bɯʥi da."
+  },
+  {
+   "text": "三人の騎士が待っている。",
+   "phonemes": "saɴ ɲiɴ no kʲiɕi ɡa maʔte iɾɯ."
+  },
+  {
+   "text": "十人の兵士がいる。",
+   "phonemes": "ʥɨː ɲiɴ no heːɕi ɡa iɾɯ."
+  },
+  {
+   "text": "百人の村人が集まった。",
+   "phonemes": "çakɯ ɲiɴ no mɯɾabʲito ɡa aʦɨmaʔta."
+  },
+  {
+   "text": "一つだけ教えてやろう。",
+   "phonemes": "çitoʦɨ dake oɕiete jaɾoː."
+  },
+  {
+   "text": "二つの道がある。",
+   "phonemes": "ɸɯtaʦɨ no mʲiʨi ɡa aɾɯ."
+  },
+  {
+   "text": "八歳の子供です。",
+   "phonemes": "haʨi sai no kodomo desɨ."
+  },
+  {
+   "text": "二十歳になった。",
+   "phonemes": "ɲiʥɨːsai ɲinaʔta."
+  },
+  {
+   "text": "一分待ってください。",
+   "phonemes": "iʨiɸɯɴ maʔte kɯdasai."
+  },
+  {
+   "text": "三分で戻る。",
+   "phonemes": "saɴ ɸɯɴ de modoɾɯ."
+  },
+  {
+   "text": "十分後に出発する。",
+   "phonemes": "ʥɨːɸɯɴ ɡo ɲi ɕɨʔpaʦɨ sɨɾɯ."
+  },
+  {
+   "text": "六時に起きる。",
+   "phonemes": "ɾokɯʥi ɲi okʲiɾɯ."
+  },
+  {
+   "text": "九時に門が閉まる。",
+   "phonemes": "kʲɨːʥi ɲi moɴ ɡa ɕimaɾɯ."
+  },
+  {
+   "text": "四月一日に出発した。",
+   "phonemes": "joŋɡaʦɨ ʦɨitaʨi ɲi ɕɨʔpaʦɨ ɕita."
+  },
+  {
+   "text": "七日後に戻ります。",
+   "phonemes": "nanaɲiʨi ɡo ɲi modoɾʲimasɨ."
+  },
+  {
+   "text": "二十日かかる。",
+   "phonemes": "haʦɨka kakaɾɯ."
+  },
+  {
+   "text": "三千年前の遺跡だ。",
+   "phonemes": "saɴʣeɴ neɴ mae no isekʲi da."
+  },
+  {
+   "text": "一万人の軍勢だ。",
+   "phonemes": "iʨimaɴ ɲiɴ no ɡɯɴʣeː da."
+  },
+  {
+   "text": "百年に一度の嵐だ。",
+   "phonemes": "çakɯ neɴ ɲi iʨido no aɾaɕi da."
+  },
+  {
+   "text": "千円札を一枚ください。",
+   "phonemes": "seɴ eɴ saʦɨ o iʨi mai kɯdasai."
+  },
+  {
+   "text": "金貨を五十枚持っている。",
+   "phonemes": "kʲiŋka o ɡoʥɨː mai moʔte iɾɯ."
+  },
+  {
+   "text": "十冊の本を読んだ。",
+   "phonemes": "ʥɨː saʦɨ no hoɴ o jonda."
+  },
+  {
+   "text": "一頭の馬を買った。",
+   "phonemes": "iʨi toː no ɯma o kaʔta."
+  },
+  {
+   "text": "二足のブーツ。",
+   "phonemes": "ɲi sokɯ no bɯːʦɨ."
+  },
+  {
+   "text": "コーヒーとケーキをどうぞ。",
+   "phonemes": "koːçiː to keːkʲi o doːʣo."
+  },
+  {
+   "text": "ギルドのマスターに会いたい。",
+   "phonemes": "ɡʲiɾɯdo no masɨtaː ɲi ai tai."
+  },
+  {
+   "text": "ドラゴンが現れた！",
+   "phonemes": "doɾaɡoɴ ɡa aɾaβaɾeta!"
+  },
+  {
+   "text": "ポーションを三つ買う。",
+   "phonemes": "poːɕoɴ o mʲiʔʦɨ kaɯ."
+  },
+  {
+   "text": "エルフの村はどこですか？",
+   "phonemes": "eɾɯɸɯ no mɯɾa βa doko desɨ ka?"
+  },
+  {
+   "text": "ナイフとフォークを持ってきて。",
+   "phonemes": "naiɸɯ to ɸoːkɯ o moʔte kʲite."
+  },
+  {
+   "text": "ドアを開けてくれ。",
+   "phonemes": "doa o akete kɯɾe."
+  },
+  {
+   "text": "パーティーに参加しますか？",
+   "phonemes": "paːtʲiː ɲi saŋka ɕi masɨ ka?"
+  },
+  {
+   "text": "クエストを受けますか？",
+   "phonemes": "kɯesɨto o ɯkemasɨ ka?"
+  },
+  {
+   "text": "モンスターに気をつけて。",
+   "phonemes": "moɴsɨtaː ɲi kʲi o ʦɨkete."
+  },
+  {
+   "text": "マルタさんの宿屋です。",
+   "phonemes": "maɾɯta saɴ no jadoja desɨ."
+  },
+  {
+   "text": "リースさんは門番だ。",
+   "phonemes": "ɾʲiːsɨ saɴ βa mombaɴ da."
+  },
+  {
+   "text": "タムシンは何かを隠している。",
+   "phonemes": "tamɯɕiɴ βa naŋka o kakɯɕite iɾɯ."
+  },
+  {
+   "text": "アイコさん、こんにちは。",
+   "phonemes": "aiko saɴ, koɲɲiʨiβa."
+  },
+  {
+   "text": "サルトレン号が行方不明だ。",
+   "phonemes": "saɾɯto ɾeɴ ɡoː ɡa jɯkɯe ɸɯmeː da."
+  },
+  {
+   "text": "いらっしゃいませ。",
+   "phonemes": "iɾaʔɕaimase."
+  },
+  {
+   "text": "お待たせいたしました。",
+   "phonemes": "o mata se itaɕi maɕita."
+  },
+  {
+   "text": "ご注文はお決まりですか？",
+   "phonemes": "ɡo ʨɨːmoɴ βa o kʲimaɾʲi desɨ ka?"
+  },
+  {
+   "text": "少々お待ちください。",
+   "phonemes": "ɕoːɕoː o maʨi kɯdasai."
+  },
+  {
+   "text": "申し訳ございません。",
+   "phonemes": "moːɕiβake ɡoʣaimaseɴ."
+  },
+  {
+   "text": "ありがとうございました。",
+   "phonemes": "aɾʲiɡatoː ɡoʣaimaɕita."
+  },
+  {
+   "text": "またお越しください。",
+   "phonemes": "mata o koɕi kɯdasai."
+  },
+  {
+   "text": "お気をつけて。",
+   "phonemes": "o kʲi o ʦɨkete."
+  },
+  {
+   "text": "おはようございます。",
+   "phonemes": "ohajoː ɡoʣaimasɨ."
+  },
+  {
+   "text": "おやすみなさい。",
+   "phonemes": "ojasɨmʲi nasai."
+  },
+  {
+   "text": "何だよ、うるさいな。",
+   "phonemes": "nanda jo, ɯɾɯsai na."
+  },
+  {
+   "text": "知らねえよ。",
+   "phonemes": "ɕiɾa neː jo."
+  },
+  {
+   "text": "早く行けって！",
+   "phonemes": "hajakɯ ikeʔte!"
+  },
+  {
+   "text": "まあ、いいけど。",
+   "phonemes": "maː, iː kedo."
+  },
+  {
+   "text": "ちょっと待ってよ。",
+   "phonemes": "ʨoʔto maʔte jo."
+  },
+  {
+   "text": "そうなんですか？",
+   "phonemes": "soː na ɴ desɨ ka?"
+  },
+  {
+   "text": "なるほど、わかりました。",
+   "phonemes": "naɾɯhodo, βakaɾʲi maɕita."
+  },
+  {
+   "text": "それは困りましたね。",
+   "phonemes": "soɾe βa komaɾʲi maɕita ne."
+  },
+  {
+   "text": "大丈夫ですよ。",
+   "phonemes": "daiʥoːbɯ desɨ jo."
+  },
+  {
+   "text": "心配しないで。",
+   "phonemes": "ɕimpai ɕinai de."
+  },
+  {
+   "text": "剣を抜いて戦え！",
+   "phonemes": "keɴ o nɯite tatakae!"
+  },
+  {
+   "text": "扉を開けられない。",
+   "phonemes": "tobʲiɾa o ake ɾaɾenai."
+  },
+  {
+   "text": "彼に手紙を書かせた。",
+   "phonemes": "kaɾe ɲi teɡamʲi o kaka seta."
+  },
+  {
+   "text": "宝を盗まれた。",
+   "phonemes": "takaɾa o nɯsɨma ɾe ta."
+  },
+  {
+   "text": "もう少し考えさせてください。",
+   "phonemes": "moː sɨkoɕi kaŋɡae sase te kɯdasai."
+  },
+  {
+   "text": "ここで休んでもいいですか？",
+   "phonemes": "koko de jasɨɴ de mo iː desɨ ka?"
+  },
+  {
+   "text": "地図を見せてもらえますか？",
+   "phonemes": "ʨizɨ o mʲisete moɾae masɨ ka?"
+  },
+  {
+   "text": "鍵をなくしてしまった。",
+   "phonemes": "kaɡʲi o nakɯɕite ɕimaʔta."
+  },
+  {
+   "text": "一緒に行きましょう。",
+   "phonemes": "iʔɕoɲi ikʲi maɕoː."
+  },
+  {
+   "text": "言わなければよかった。",
+   "phonemes": "iβa nakeɾe ba jokaʔta."
+  },
+  {
+   "text": "思った通りだ。",
+   "phonemes": "omoʔta toːɾʲi da."
+  },
+  {
+   "text": "そう言っていた。",
+   "phonemes": "soː iʔte ita."
+  },
+  {
+   "text": "聞いたことがない。",
+   "phonemes": "kʲiːta koto ɡa nai."
+  },
+  {
+   "text": "見たことがありますか？",
+   "phonemes": "mʲita koto ɡa aɾʲimasɨ ka?"
+  },
+  {
+   "text": "食べてみたい。",
+   "phonemes": "tabete mʲitai."
+  },
+  {
+   "text": "王様の命令だ。",
+   "phonemes": "oːsama no meːɾeː da."
+  },
+  {
+   "text": "東の塔へ向かえ。",
+   "phonemes": "çiɡaɕi no toː e mɯkae."
+  },
+  {
+   "text": "封印を解く方法がある。",
+   "phonemes": "ɸɯːiɴ o tokɯ hoːhoː ɡa aɾɯ."
+  },
+  {
+   "text": "冒険者よ、ようこそ。",
+   "phonemes": "boːkeɴɕa jo, joːkoso."
+  },
+  {
+   "text": "空っぽの箱だ。",
+   "phonemes": "kaɾaʔpo no bako da."
+  },
+  {
+   "text": "切符を買って、列車に乗った。",
+   "phonemes": "kʲiʔpɯ o kaʔte, ɾeʔɕa ɲi noʔta."
+  },
+  {
+   "text": "三枚の硬貨。",
+   "phonemes": "saɴ mai no koːka."
+  },
+  {
+   "text": "新聞を読んでいる。",
+   "phonemes": "ɕimbɯɴ o jonde iɾɯ."
+  },
+  {
+   "text": "本物の宝石だ。",
+   "phonemes": "hommono no hoːsekʲi da."
+  },
+  {
+   "text": "雰囲気がいい。",
+   "phonemes": "ɸɯɴikʲi ɡa iː."
+  },
+  {
+   "text": "銀貨と銅貨。",
+   "phonemes": "ɡʲiŋka to doːka."
+  },
+  {
+   "text": "反対側の岸に渡る。",
+   "phonemes": "hantai ɡaβa no kʲiɕi ɲi βataɾɯ."
+  },
+  {
+   "text": "簡単なことだ。",
+   "phonemes": "kantaɴ na koto da."
+  },
+  {
+   "text": "案内しましょう。",
+   "phonemes": "annai ɕi maɕoː."
+  },
+  {
+   "text": "信用できない。",
+   "phonemes": "ɕiɴjoː dekʲinai."
+  },
+  {
+   "text": "ドキドキする。",
+   "phonemes": "dokʲidokʲi sɨɾɯ."
+  },
+  {
+   "text": "雨がザーザー降っている。",
+   "phonemes": "ame ɡa ʣaːʣaː ɸɯʔte iɾɯ."
+  },
+  {
+   "text": "ゆっくり休んでください。",
+   "phonemes": "jɯʔkɯɾʲi jasɨɴ de kɯdasai."
+  },
+  {
+   "text": "びっくりした！",
+   "phonemes": "bʲiʔkɯɾʲi ɕita!"
+  },
+  {
+   "text": "にこにこしている。",
+   "phonemes": "ɲikoɲiko ɕite iɾɯ."
+  },
+  {
+   "text": "どうして泣いているの？",
+   "phonemes": "doːɕite naite iɾɯ no?"
+  },
+  {
+   "text": "誰がやったんだ？",
+   "phonemes": "daɾe ɡa jaʔta ɴ da?"
+  },
+  {
+   "text": "いつ帰ってくるの？",
+   "phonemes": "iʦɨ kaeʔte kɯɾɯ no?"
+  },
+  {
+   "text": "どこへ行くつもりだ？",
+   "phonemes": "doko e ikɯ ʦɨmoɾʲi da?"
+  },
+  {
+   "text": "何が欲しいんだ？",
+   "phonemes": "naɴ ɡa hoɕiː ɴ da?"
+  },
+  {
+   "text": "「静かに」と彼は言った。",
+   "phonemes": "“ɕizɨka ɲi” to kaɾe βa iʔta."
+  },
+  {
+   "text": "――もう遅い。",
+   "phonemes": "moː osoi."
+  },
+  {
+   "text": "えっと……どうしよう。",
+   "phonemes": "eʔto...... doː ɕijoː."
+  },
+  {
+   "text": "はい、そうです！",
+   "phonemes": "hai, soː desɨ!"
+  },
+  {
+   "text": "いいえ、違います。",
+   "phonemes": "iːe, ʨiɡaimasɨ."
+  },
+  {
+   "text": "この剣はＡランクだ。",
+   "phonemes": "kono keɴ βa A ɾaŋkɯ da."
+  },
+  {
+   "text": "ＨＰが少ない。",
+   "phonemes": "HP ɡa sɨkɯnai."
+  },
+  {
+   "text": "レベル１０のモンスター。",
+   "phonemes": "ɾebeɾɯ ʥɨː no moɴsɨtaː."
+  },
+  {
+   "text": "第３章が始まる。",
+   "phonemes": "dai saɴ ɕoː ɡa haʥimaɾɯ."
+  },
+  {
+   "text": "２０２６年の春。",
+   "phonemes": "ɲi seɴ ɲiʥɨːɾokɯ neɴ no haɾɯ."
+  }
+ ]
+}

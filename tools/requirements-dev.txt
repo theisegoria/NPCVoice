@@ -1,0 +1,25 @@
+# Maintainer tools only: Kokoro -> Core ML conversion and the parity fixtures
+# (tools/convert_kokoro_coreml.py, kokoro_parity.py, make_*_golden.py). The app, CLI and SDK
+# need no Python. Python 3.11:
+#   python3.11 -m venv .venv-tools && .venv-tools/bin/pip install -r tools/requirements-dev.txt
+# misaki and kokoro are installed without extras on purpose: espeak and pyopenjtalk are
+# not used (see tools/kokoro_engine.py).
+torch==2.14.0
+coremltools==9.0
+numpy==2.4.6
+kokoro==0.9.4 --no-deps
+misaki==0.9.4
+addict==2.4.0
+regex==2026.9.29
+loguru==0.7.3
+huggingface_hub==0.36.2
+transformers==4.57.6
+num2words==0.5.6
+spacy==3.8.16
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+fugashi==1.5.2
+unidic-lite==1.0.8
+jaconv==0.5.0
+mojimoji==0.0.13
+tokenizers==0.22.2
+Jinja2==3.1.6

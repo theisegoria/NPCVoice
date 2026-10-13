@@ -1,0 +1,6 @@
+// Swift sees only the C ABI; the C++ headers are for C++ engines and internal use.
+module NPCCore {
+    header "npc_core.h"
+    header "npc_sdk.h"
+    export *
+}

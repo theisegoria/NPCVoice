@@ -1,0 +1,165 @@
+{
+ "source": "misaki 0.9.4 en.G2P(trf=False, british=False, fallback=None) + en_core_web_sm 3.8.0",
+ "lines": [
+  {
+   "text": "Evening, love. A room costs three silver marks a night.",
+   "phonemes": "ˈivnɪŋ, lˈʌv. ɐ ɹˈum kˈɔsts θɹˈi sˈɪlvəɹ mˈɑɹks ɐ nˈIt."
+  },
+  {
+   "text": "Move along. The watch is busy.",
+   "phonemes": "mˈuv əlˈɔŋ. ðə wˈɑʧ ɪz bˈɪzi."
+  },
+  {
+   "text": "Now why would I tell you that?",
+   "phonemes": "nˈW wˌI wʊd ˌI tˈɛl ju ðˈæt?"
+  },
+  {
+   "text": "Welcome to the Gull & Lantern. Mind the puddle.",
+   "phonemes": "wˈɛlkəm tə ðə ɡˈʌl ænd lˈæntəɹn. mˈInd ðə pˈʌdᵊl."
+  },
+  {
+   "text": "No writ, no passage.",
+   "phonemes": "nˈO ɹˈɪt, nˈO pˈæsɪʤ."
+  },
+  {
+   "text": "The east gate closes at the eighth bell, and nobody passes after without a writ.",
+   "phonemes": "ði ˈist ɡˈAt klˈOzᵻz æt ði ˈAθ bˈɛl, ænd nˈObˌɑdi pˈæsᵻz ˈæftəɹ wɪðˈWt ɐ ɹˈɪt."
+  },
+  {
+   "text": "The merchant ship Saltwren is three days overdue.",
+   "phonemes": "ðə mˈɜɹʧənt ʃˈɪp ❓ ɪz θɹˈi dˈAz ˌOvəɹdˈu."
+  },
+  {
+   "text": "I'd rather have a full house than a quiet night. What's your story, love?",
+   "phonemes": "ˌId ɹˈæðəɹ hæv ɐ fˈʊl hˈWs ðən ɐ kwˈIət nˈIt. wˌʌts jʊɹ stˈɔɹi, lˈʌv?"
+  },
+  {
+   "text": "Oh, a fellow in need of a hand? Well, I can haul a few crates to the docks.",
+   "phonemes": "ˈO, ɐ fˈɛlO ɪn nˈid ʌv ɐ hˈænd? wˈɛl, ˌI kæn hˈɔl ɐ fjˈu kɹˈAts tə ðə dˈɑks."
+  },
+  {
+   "text": "You think I'm some robot? Well, I'm Marta, and I've heard every lie twice.",
+   "phonemes": "jˌu θˈɪŋk ˌIm sˌʌm ɹˈObˌɑt? wˈɛl, ˌIm ❓, ænd ˌIv hˈɜɹd ˈɛvəɹi lˈI twˈIs."
+  },
+  {
+   "text": "The harbor is a graveyard of rusted hulls and rotting timber, Captain.",
+   "phonemes": "ðə hˈɑɹbəɹ ɪz ɐ ɡɹˈAvjˌɑɹd ʌv ɹˈʌstᵻd hˈʌlz ænd ɹˈɑTɪŋ tˈɪmbəɹ, kˈæptᵊn."
+  },
+  {
+   "text": "Don't you dare! I won't let you near the lighthouse.",
+   "phonemes": "dˈOnt ju dˈɛɹ! ˌI wOnt lˈɛt ju nˌɪɹ ðə lˈIthˌWs."
+  },
+  {
+   "text": "It's the highest tide in ten years; we're all going to get wet.",
+   "phonemes": "ˌɪts ðə hˈIᵻst tˈId ɪn tˈɛn jˈɪɹz; wɪɹ ˈɔl ɡˈOɪŋ tə ɡɛt wˈɛt."
+  },
+  {
+   "text": "Take the key, then. Room four, up the stairs and to the left.",
+   "phonemes": "tˈAk ðə kˈi, ðˈɛn. ɹˈum fˈɔɹ, ˌʌp ðə stˈɛɹz ænd tə ðə lˈɛft."
+  },
+  {
+   "text": "She's been gone since the storm on the 3rd of May.",
+   "phonemes": "ʃˌiz bɪn ɡɔn sˈɪns ðə stˈɔɹm ˌɔn ðə θˈɜɹd ʌv mˈA."
+  },
+  {
+   "text": "That'll be 12 marks, or 5 if you help me with the barrels.",
+   "phonemes": "ðˈætəl bi twˈɛlv mˈɑɹks, ɔɹ fˈIv ɪf ju hˈɛlp mˌi wɪð ðə bˈɛɹəlz."
+  },
+  {
+   "text": "In 1999, the old king closed the harbor for 100 days.",
+   "phonemes": "ɪn nˌIntˈin hˈʌndɹəd nˈIndi nˈIn, ði ˈOld kˈɪŋ klˈOzd ðə hˈɑɹbəɹ fɔɹ wˈʌn hˈʌndɹəd dˈAz."
+  },
+  {
+   "text": "It costs $3.50, not £20.",
+   "phonemes": "ˌɪt kˈɔsts θɹˈi dˈɑləɹz ænd fˈɪfti sˈɛnts, nˌɑt twˈɛnti pˈWndz."
+  },
+  {
+   "text": "We need 2,500 men by the 21st.",
+   "phonemes": "wˌi nˈid tˈu θˈWzᵊnd fˈIv hˈʌndɹəd mˈɛn bI ðə twˈɛnti fˈɜɹst."
+  },
+  {
+   "text": "He read the letter yesterday, and now I read it every night.",
+   "phonemes": "hˌi ɹˈɛd ðə lˈɛTəɹ jˈɛstəɹdˌA, ænd nˈW ˌI ɹˈɛd ɪt ˈɛvəɹi nˈIt."
+  },
+  {
+   "text": "I live by the docks; the music is live tonight.",
+   "phonemes": "ˌI lˈɪv bI ðə dˈɑks; ðə mjˈuzɪk ɪz lˈIv tənˈIt."
+  },
+  {
+   "text": "Lead the way, but watch out for the lead pipes.",
+   "phonemes": "lˈid ðə wˈA, bˌʌt wˈɑʧ ˈWt fɔɹ ðə lˈid pˈIps."
+  },
+  {
+   "text": "They refuse to take the refuse to the dump.",
+   "phonemes": "ðˌA ɹəfjˈuz tə tˈAk ðə ɹˈɛfjˌus tə ðə dˈʌmp."
+  },
+  {
+   "text": "The wind was too strong to wind the sails.",
+   "phonemes": "ðə wˈɪnd wʌz tˈu stɹˈɔŋ tə wˈInd ðə sˈAlz."
+  },
+  {
+   "text": "I object to that object on the table.",
+   "phonemes": "ˌI əbʤˈɛkt tə ðˈæt ˈɑbʤəkt ˌɔn ðə tˈAbᵊl."
+  },
+  {
+   "text": "Close the door, the storm is close.",
+   "phonemes": "klˈOz ðə dˈɔɹ, ðə stˈɔɹm ɪz klˈOs."
+  },
+  {
+   "text": "Tamsin Reed knows more than she says.",
+   "phonemes": "❓ ɹˈid nˈOz mˈɔɹ ðən ʃi sˈɛz."
+  },
+  {
+   "text": "Captain Rhys Hallow guards the east gate.",
+   "phonemes": "kˈæptᵊn ❓ hˈælO ɡˈɑɹdz ði ˈist ɡˈAt."
+  },
+  {
+   "text": "Smuggler, sailor, traveler: all are welcome at the inn.",
+   "phonemes": "smˈʌɡᵊləɹ, sˈAləɹ, tɹˈævᵊləɹ: ˈɔl ɑɹ wˈɛlkəm æt ði ˈɪn."
+  },
+  {
+   "text": "Hmm... I'm not sure. Ask the harbormaster.",
+   "phonemes": "hmm... ˌIm nˌɑt ʃˈʊɹ. ˈæsk ðə hˈɑɹbəɹmˌæstəɹ."
+  },
+  {
+   "text": "Well—that's not something I'd talk about.",
+   "phonemes": "wˈɛl—ðˈæts nˌɑt sˈʌmθˌɪŋ ˌId tˈɔk əbˈWt."
+  },
+  {
+   "text": "\"Halt!\" he shouted. \"Who goes there?\"",
+   "phonemes": "“hˈɔlt!” hi ʃˈWTᵻd. “hˌu ɡˈOz ðˈɛɹ?”"
+  },
+  {
+   "text": "You've got until the tide turns, mate.",
+   "phonemes": "jˌuv ɡɑt ˌʌntˈɪl ðə tˈId tˈɜɹnz, mˈAt."
+  },
+  {
+   "text": "The Saltwren's cargo isn't mine to sell.",
+   "phonemes": "ðə ❓s kˈɑɹɡO ˈɪzᵊnt mˈIn tə sˈɛl."
+  },
+  {
+   "text": "My grandmother's grandmother built this inn.",
+   "phonemes": "mˌI ɡɹˈændmˌʌðəɹz ɡɹˈændmˌʌðəɹ bˈɪlt ðɪs ˈɪn."
+  },
+  {
+   "text": "He's running, jumping, and climbing over the walls.",
+   "phonemes": "hˌiz ɹˈʌnɪŋ, ʤˈʌmpɪŋ, ænd klˈImɪŋ ˈOvəɹ ðə wˈɔlz."
+  },
+  {
+   "text": "The guards were stopped, questioned, and released.",
+   "phonemes": "ðə ɡˈɑɹdz wɜɹ stˈɑpt, kwˈɛsʧᵊnd, ænd ɹəlˈist."
+  },
+  {
+   "text": "Please, sir, it's raining cats and dogs out there.",
+   "phonemes": "plˈiz, sˌɜɹ, ɪts ɹˈAnɪŋ kˈæts ænd dˈɔɡz ˈWt ðˈɛɹ."
+  },
+  {
+   "text": "Can't you see I'm busy? Come back tomorrow.",
+   "phonemes": "kˈænt ju sˈi ˌIm bˈɪzi? kˈʌm bˈæk təmˈɑɹO."
+  },
+  {
+   "text": "What brings you to Harbor Town, stranger?",
+   "phonemes": "wˌʌt bɹˈɪŋz ju tə hˈɑɹbəɹ tˈWn, stɹˈAnʤəɹ?"
+  }
+ ]
+}
